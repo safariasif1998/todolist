@@ -1,0 +1,81 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.main-container {
+  width: 600px;
+  margin: 0px auto 0px auto;
+  padding: 20px 20px 2px 20px;
+  border-radius: 7px;
+  background-color: rgb(246, 246, 246);
+  box-shadow: 2px 2px 4px rgb(205, 204, 204);
+}
+.title {
+  text-align: center;
+  font-weight: 600px;
+  padding: 10px 0px;
+}
+.header {
+  width: 100%;
+}
+.header .header-content {
+  display: flex;
+  border: 1px solid #464545;
+  border-radius: 4px;
+}
+.header .input {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+}
+.header .input:focus {
+  outline: none;
+}
+.header .add-task {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  background-color: #222121;
+  color: #fff;
+}
+.header .add-task:hover{
+    background-color: #464545;
+    cursor: pointer;
+}
+.main-body {
+  margin-top: 30px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+td {
+  border-bottom: 1px solid #6e6d6d;
+  padding: 8px;
+  text-align: left;
+}
+.table .tbody .remove {
+  background-color: #772929;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.table .tbody .remove:hover {
+  background-color: #ca4444;
+}
+
+.footer p {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
