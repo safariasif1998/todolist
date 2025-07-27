@@ -45,9 +45,9 @@ body {
   background-color: #222121;
   color: #fff;
 }
-.header .add-task:hover{
-    background-color: #464545;
-    cursor: pointer;
+.header .add-task:hover {
+  background-color: #464545;
+  cursor: pointer;
 }
 .main-body {
   margin-top: 30px;
@@ -55,6 +55,10 @@ body {
 .table {
   width: 100%;
   border-collapse: collapse;
+}
+.table thead tr {
+  background-color: #772929;
+  color: #fff;
 }
 .table th,
 td {
@@ -70,6 +74,13 @@ td {
   border-radius: 2px;
   cursor: pointer;
 }
+.table tr {
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.table tbody tr:hover {
+  background-color: #c7c7c7;
+}
 .table .tbody .remove:hover {
   background-color: #ca4444;
 }
@@ -77,5 +88,6 @@ td {
 .footer p {
   width: 100%;
   text-align: center;
-  padding-bottom: 10px;
+
+  padding: 7px 0px;
 }

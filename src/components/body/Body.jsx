@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 export default class Body extends Component {
-  handelRemove(id) {
-    this.props.handelRemove(id);
+  handelDelete(id) {
+    this.props.removeItem(id);
   }
   render() {
     const task = this.props.tasks.map((task, index) => {
@@ -11,7 +11,10 @@ export default class Body extends Component {
           <td>{task.number}</td>
           <td>{task.name}</td>
           <td style={{ textAlign: "center" }}>
-            <button className="remove" onClick={(id)=>this.handelRemove(task.id)}>
+            <button
+              className="remove"
+              onClick={(id) => this.handelDelete(task.id)}
+            >
               Remove
             </button>
           </td>

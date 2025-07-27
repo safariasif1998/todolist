@@ -26,8 +26,10 @@ class Main extends Component {
       };
     });
   }
-  handelRemove(item) {
-    console.log("item is clicked " + item);
+  removedItem = (n) => {};
+  handelDelete(item) {
+    const newTasks = this.state.tasks.filter((p) => p.id !== item);
+    this.setState({ tasks: newTasks });
   }
   render() {
     return (
@@ -37,7 +39,7 @@ class Main extends Component {
           <Header handelAddTask={this.handelAddTask.bind(this)} />
           <Body
             tasks={this.state.tasks}
-            handelRemove={this.handelRemove.bind(this)}
+            removeItem={this.handelDelete.bind(this)}
           />
           <Footer />
         </div>
